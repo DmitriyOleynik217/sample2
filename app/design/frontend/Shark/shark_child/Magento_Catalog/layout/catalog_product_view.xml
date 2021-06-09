@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Cms\Block\Block" name="share_identifier">
+            <arguments>
+                <argument name="block_id" xsi:type="string">share_identifier</argument>
+            </arguments>
+            </block>
+            <referenceBlock name="product.attributes" remove="true"/>
+            <referenceBlock name="product.info.details">
+                <referenceBlock name="product.info.description">
+                    <arguments>
+                        <argument name="title" translate="true" xsi:type="string">Description</argument>
+                    </arguments>
+                </referenceBlock>
+            </referenceBlock>
+            <referenceBlock name="reviews.tab">
+                <arguments>
+                    <argument name="title" translate="true" xsi:type="string">Comments</argument>
+                </arguments>
+            </referenceBlock>
+            <referenceBlock name="view.addto.compare" remove="true"/>
+            <referenceBlock name="view.addto.wishlist" remove="true"/>
+            <referenceBlock name="product.info.review" remove="true"/>
+        </referenceContainer>
+        <referenceContainer name="footer">
+            <block class="Magento\Cms\Block\Block" name="footerlogo_identifier" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footerlogo_identifier</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content.aside">
+            <block class="Magento\Cms\Block\Block" name="leafs_block" after="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">leafs_block</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <move element="product.info.sku" destination="page.main.title" as="product.sku.test" after="page.main.title"/>
+        <move element="product.info.stock.sku" destination="page.main.title" as="product.sku.stock.test"/>
+        <move element="product.price.final" destination="page.main.title" as="product.price.final.test" after="product.sku.test"/>
+        <move element="share_identifier" destination="page.main.title" as="share_networks_identifier" after="-"/>
+        <move element="product.info.details" destination="product.info.main" as="product.info.details.new" after="-"/>
+        <move element="navigation.sections" destination="header-wrapper" as="nav.sections.new" after="logo"/>
+    </body>
+</page>

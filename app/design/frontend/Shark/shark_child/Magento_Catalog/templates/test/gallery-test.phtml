@@ -1,0 +1,15 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Magento\Catalog\Block\Product\Gallery */
+?>
+<?php
+$imageUrl = $block->getImageUrl();
+?>
+
+<div class="gallery_test" style="width: 50px; height: 65px;">
+    <img src="<?php echo $imageUrl ?>" width="70" height="85" title="test">
+</div>

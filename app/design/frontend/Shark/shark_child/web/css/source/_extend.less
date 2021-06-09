@@ -1,0 +1,574 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    body {
+        .page-wrapper{
+                .breadcrumbs{
+                    width: 500px;
+                    position: relative;
+                    left: 80px;
+                    ul{
+                        font-style: normal;
+                        letter-spacing: 0.9px;
+                        line-height: normal;
+                    }
+                    a{
+                        color: #cdcdcd;
+                    }
+                    strong{
+                        color: #626262;
+                    }
+                }
+                .columns{
+                    .column.main{
+                        .product-info-main{
+                            .product-add-form{
+                                position: relative;
+                                z-index: 100;
+                                padding-top: 0;
+                                .fieldset{
+                                    display: flex;
+                                    .field.qty{
+                                        span{
+                                            visibility: hidden;
+                                        }
+                                        .control{
+                                            position: relative;
+                                            bottom: 40px;
+                                            margin-right: 10px;
+                                            input#qty.input-text.qty{
+                                                width: 58px;
+                                                height: 62px;
+                                                color: #000000;
+                                                font-family: Verdana;
+                                                text-align: center;
+                                                display: block;
+                                                border: none;
+                                            }
+                                        }
+                                    }
+                                    .actions{
+                                        button{
+                                            width: 131px;
+                                            height: 28px;
+                                            border-radius: 14px;
+                                            background-color: #88b337;
+                                            span{
+                                                display: block;
+                                                position: relative;
+                                                bottom: 8px;
+                                                width: 99px;
+                                                height: 11px;
+                                                color: #ffffff;
+                                                font-family: Verdana;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .page-title-wrapper.product{
+                                display: flex;
+                                flex-direction: column;
+                                .product-info-stock-sku{
+                                    text-align: left;
+                                    .stock.available{
+                                        position: relative;
+                                        right: 50px;
+                                        width: 65px;
+                                        height: 11px;
+                                        color: #000000;
+                                        font-family: Verdana;
+                                        font-weight: 400;
+                                        text-align: left;
+                                        text-transform: initial;
+                                        background: url("../images/checked.png") no-repeat;
+                                        display: block;
+                                        padding-left: 17px;
+                                        position: relative;
+                                        left: 100px;
+                                        top: 4px;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+                                .price-box.price-final_price{
+                                    span.price{
+                                        width: 50px;
+                                        height: 13px;
+                                        color: #000000;
+                                        font-family: Verdana;
+                                        font-size: 18px;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        letter-spacing: normal;
+                                        line-height: 18px;
+                                        text-align: left;
+                                        text-transform: uppercase;
+                                    }
+                                    margin-bottom: 10px;
+                                }
+                                .share_networks{
+                                    position: relative;
+                                    top: 85px;
+                                    z-index: 101;
+                                }
+                            }
+                            .page-title{
+                                span{
+                                    width: 136px;
+                                    height: 19px;
+                                    color: #000000;
+                                    font-family: Verdana;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    font-style: normal;
+                                    letter-spacing: normal;
+                                    line-height: 18px;
+                                    text-align: left;
+                                }
+                            }
+
+                            .product.info.detailed{
+                                .product.data.items{
+                                    .data.item.title.active{
+                                        a{
+                                            color: #000000;
+                                            font-family: Verdana;
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            text-align: center;
+                                            display: block;
+                                            border: none;
+                                            background: none;
+                                            padding-left: 10px;
+                                            border-bottom: solid;
+                                            border-color: #88b337;
+                                        }
+                                    }
+                                    .data.item.title{
+                                        width: 173px;
+                                        height: 12px;
+                                        opacity: 0.6;
+                                        color: #000000;
+                                        font-family: Verdana;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        font-style: normal;
+                                        letter-spacing: normal;
+                                        line-height: normal;
+                                        text-align: left;
+                                        .switch{
+                                            display: block;
+                                            border: none;
+                                            background: none;
+                                            font-weight: 700;
+                                            font-size: 16px;
+                                            text-align: left;
+                                            padding-left: 10px;
+                                        }
+
+
+                                    }
+                                    #tab-label-reviews.data.item.title{
+                                        width: 152px;
+                                        height: 12px;
+                                        opacity: 0.6;
+                                        color: #000000;
+                                        font-family: Verdana;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        font-style: normal;
+                                        letter-spacing: normal;
+                                        line-height: normal;
+                                        text-align: left;
+                                    }
+                                    .data.item.content{
+                                        .product.attribute.description{
+                                            .value{
+                                                p{
+                                                    color: #000000;
+                                                    font-family: Verdana;
+                                                    font-size: 14px;
+                                                    font-weight: 400;
+                                                    font-style: normal;
+                                                    letter-spacing: normal;
+                                                    line-height: normal;
+                                                    text-align: left;
+                                                    span{
+                                                        color: #88b337;
+                                                    }
+                                                }
+                                                ul{
+                                                    font-family: Verdana;
+                                                    font-style: normal;
+                                                    letter-spacing: normal;
+                                                    line-height: 21px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .product-social-links{
+                                .product-addto-links{
+                                    a:active{
+                                        color: #4cae4c;
+                                    }
+                                }
+                            }
+                            .product.attribute.sku{
+                                position: relative;
+                                bottom: 24px;
+                            }
+                        }
+                        .block.upsell{
+                            .block-title.title{
+                                height: 795px;
+                                strong#block-upsell-heading{
+                                    display: block;
+                                    width: 450px;
+                                    position: relative;
+                                    left: 500px;
+                                    color: #000000;
+                                    font-family: Verdana;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    text-align: left;
+                                    z-index: -1;
+                                    bottom: 160px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+.product {
+    &.info {
+        &.detailed{
+            .items {
+
+            }
+        }
+    }
+}
+.product-item-name{
+    a{
+        width: 166px;
+        height: 68px;
+        color: #000000;
+        font-family: Verdana;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+    }
+}
+.nav-sections-item-content{
+    ul{
+        color: #000000;
+        font-family: Verdana;
+        text-transform: uppercase;
+    }
+}
+.navigation{
+    background: #FFFFFF;
+    .level0.has-active{
+        .level-top{
+                border-color: #88b337;
+        }
+    }
+    .level0:last-child{
+        a#ui-id-8{
+            background: url("../images/leaf_(1).png") no-repeat;
+        }
+    }
+}
+.footer.content{
+    ul{
+        color: #000000;
+        font-family: Verdana;
+        font-size: 12px;
+        text-align: left;
+    }
+}
+.field.newsletter{
+    input{
+        color: #999999;
+        font-family: Verdana;
+        font-size: 10px;
+        text-align: center;
+        border: none;
+    }
+}
+.fotorama{
+    width: 505px;
+    height: 800px;
+}
+fotorama__stage__frame{
+    img{
+        width: 500px;
+        height: 500px;
+    }
+}
+.product-addto-links{
+    a{
+        position: relative;
+        z-index: 100;
+    }
+}
+.product-reviews-summary{
+    .reviews-actions{
+        position: relative;
+        z-index: 100;
+    }
+}
+.product.data.items{
+    .item.content{
+        border: none;
+    }
+}
+.box-tocart{
+    margin: 0;
+}
+.product.info.detailed{
+    position: relative;
+    bottom: 35px;
+    right: 35px;
+}
+.products{
+   /* position: relative;
+    bottom: 70px;*/
+}
+.gallery-placeholder{
+    position: relative;
+    left: 180px;
+    width: 500px;
+}
+.page-footer{
+    background: #FFFFFF;
+}
+.nav-sections{
+    background: #ffffff;
+    position: relative;
+    top: 70px;
+    left: 110px;
+    width: 900px;
+}
+.minicart-wrapper{
+    .action.showcart{
+        .counter.qty{
+            background: #88b337;
+        }
+    }
+}
+.footer.content{
+    display: flex;
+    justify-content: space-between;
+    p{
+        order: 1;
+    }
+    .block{
+        order: 3;
+    }
+    .links{
+        order: 2;
+    }
+}
+
+.action.primary {
+    color: #1a1a1a;
+    background: #FFFFFF;
+    border: none;
+}
+
+.block.newsletter{
+    .action.subscribe{
+        span{
+            color: #333333;
+            font-family: Verdana;
+            font-size: 10px;
+            font-weight: 400;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}
+.page-header{
+    .panel.wrapper{
+        visibility: hidden;
+        height: 0px;
+    }
+}
+.leafs{
+    p{
+        margin-left: 600px;
+    }
+}
+.page-layout-2columns-left{
+    .sidebar-additional{
+        visibility: hidden;
+    }
+}
+.products{
+    li{
+        .product-reviews-summary{
+            visibility: hidden;
+            margin-bottom: 0;
+            height: 0;
+        }
+    }
+}
+.product-item{
+    color: #000000;
+    font-family: Verdana;
+    text-align: center;
+    .price-box{
+        margin-top: 0;
+    }
+}
+.filter-options{
+    .items{
+        li{
+            :hover{
+                background: #88b337;
+            }
+        }
+    }
+}
+.product.name{
+    a{
+        color: #000000;
+        font-family: Verdana;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+    }
+}
+.action.primary{
+    display: block;
+    background: #88b337;
+    border-radius: 14px;
+}
+
+.page-main{
+    .page-title-wrapper{
+        .page-title{
+            span{
+                width: 96px;
+                height: 16px;
+                color: #333333;
+                font-family: Verdana;
+                font-size: 16px;
+                font-weight: 700;
+                text-align: left;
+            }
+        }
+    }
+}
+.filter-options{
+    color: #333333;
+    font-family: Verdana;
+    font-weight: 700;
+    text-transform: initial;
+}
+.filter-options-content{
+    ol{
+        a{
+            color: #999999;
+            font-family: Verdana;
+            line-height: 30px;
+            text-align: left;
+            font-weight: 400;
+        }
+    }
+}
+.filter-options-title{
+    color: #333333;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.title{
+    width: 393px;
+    height: 37px;
+    color: #88b337;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner {
+    padding: 80px;
+    position: relative;
+
+    &__title {
+        color: #88b337;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3.6px;
+        line-height: 60px;
+        }
+    &__subtitle {
+        opacity: 0.7;
+        color: #333333;
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        width: max-content;
+        text-transform: initial;
+    }
+    &__order {
+        color: #333333;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 400;
+        margin-top: 80px;
+    }
+    &__item{
+        display: flex !important;
+        justify-content: space-around;
+    }
+}
+
+.order__link{
+    a{
+        display: block;
+        text-align: center;
+        width: 75px;
+        border: solid;
+        border-radius: 50px;
+        background: #88b337;
+        border-color: #88b337;
+        color: #ffffff;
+    }
+}
+
+.share-networks{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.logo{
+    margin: -8px auto 25px -75px;
+}
