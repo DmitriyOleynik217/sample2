@@ -8,8 +8,6 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <!--<block class="Magento\Framework\View\Element\Template" template="Magento_Catalog::test/page_main_title.phtml"/>-->
-           <!-- <block class="Magento\Framework\View\Element\Template" template="Magento_Theme::home-slider/home-slider.phtml"/>-->
 
             <block class="Magento\Cms\Block\Block" name="home-banner" before="-">
                 <arguments>
@@ -39,5 +37,6 @@
                 </action>
             </block>-->
         </referenceContainer>
+
     </body>
 </page>

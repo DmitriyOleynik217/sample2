@@ -54,7 +54,7 @@
                                             width: 131px;
                                             height: 28px;
                                             border-radius: 14px;
-                                            background-color: #88b337;
+                                            background-color: #FFFFFF;
                                             span{
                                                 display: block;
                                                 position: relative;
@@ -62,10 +62,11 @@
                                                 width: 99px;
                                                 height: 11px;
                                                 color: #ffffff;
-                                                font-family: Verdana;
-                                                font-size: 14px;
-                                                font-weight: 400;
+                                                font-family: Verdana, Geneva, sans-serif;
                                             }
+                                        }
+                                        .action.subscribe.primary{
+                                            background: #FFFFFF;
                                         }
                                     }
                                 }
@@ -287,11 +288,6 @@
                 border-color: #88b337;
         }
     }
-    .level0:last-child{
-        a#ui-id-8{
-            background: url("../images/leaf_(1).png") no-repeat;
-        }
-    }
 }
 .footer.content{
     ul{
@@ -357,13 +353,7 @@ fotorama__stage__frame{
 .page-footer{
     background: #FFFFFF;
 }
-.nav-sections{
-    background: #ffffff;
-    position: relative;
-    top: 70px;
-    left: 110px;
-    width: 900px;
-}
+
 .minicart-wrapper{
     .action.showcart{
         .counter.qty{
@@ -454,11 +444,7 @@ fotorama__stage__frame{
         line-height: 21px;
     }
 }
-.action.primary{
-    display: block;
-    background: #88b337;
-    border-radius: 14px;
-}
+
 
 .page-main{
     .page-title-wrapper{
@@ -570,5 +556,40 @@ fotorama__stage__frame{
 }
 
 .logo{
-    margin: -8px auto 25px -75px;
+    width: 112px;
+    height: 51px;
+}
+
+
+.header.content{
+    display: flex;
+    align-items: center;
+}
+.sections{
+    margin-bottom: 0px;
+}
+.header_link_login{
+    margin-left: 15px;
+}
+.minicart-wrapper a.action.showcart::before {
+        content: url("../images/minicart.png");
+}
+
+.footer-contact{
+    .share-networks{
+        position: static;
+        display: flex;
+    }
+    &__title{
+        font-weight: 700;
+    }
+}
+
+.footer-info{
+    &__title{
+        font-weight: 700;
+    }
+    &__list{
+        font-size: 1.4rem;
+    }
 }
