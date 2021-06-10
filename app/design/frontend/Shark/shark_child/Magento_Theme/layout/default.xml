@@ -31,6 +31,13 @@
         <referenceContainer name="header-wrapper">
             <block class="Magento\Framework\View\Element\Template" name="sign-in" template="Magento_Theme::test/header-authorization.phtml" after="top.search"/>
         </referenceContainer>
+        <referenceContainer name="page.wrapper">
+            <block class="Magento\Cms\Block\Block" name="leafs_block" before="footer">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">leafs_block</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
 
         <move element="navigation.sections" destination="header-wrapper" as="nav.sections.new" after="logo"/>
         <referenceContainer name="header.panel" remove="true"/>

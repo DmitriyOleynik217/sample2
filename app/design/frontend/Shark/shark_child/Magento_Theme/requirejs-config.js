@@ -9,5 +9,8 @@ var config = {
         slick: {
             deps: ['jquery']
         }
-    }
+    },
+    deps: [
+        "js/main"
+    ]
 };
