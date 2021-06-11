@@ -382,6 +382,10 @@ fotorama__stage__frame{
 }
 
 .block.newsletter{
+    h6{
+        font-size: 12px;
+        margin: 0;
+    }
     .action.subscribe{
         span{
             color: #333333;
@@ -534,6 +538,19 @@ fotorama__stage__frame{
         display: flex !important;
         justify-content: space-around;
     }
+    .share-networks{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .slick-next.slick-arrow::before {
+        content: url("../images/down-arrow.png");
+    }
+    .slick-prev.slick-arrow::before{
+        content: url("../images/down-arrow2.png");
+    }
+
+
 }
 
 .order__link{
@@ -549,11 +566,7 @@ fotorama__stage__frame{
     }
 }
 
-.share-networks{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
+
 
 .logo{
     width: 112px;
@@ -576,12 +589,29 @@ fotorama__stage__frame{
 }
 
 .footer-contact{
-    .share-networks{
-        position: static;
-        display: flex;
-    }
+    display: flex;
+    flex-direction: column;
     &__title{
         font-weight: 700;
+    }
+    &__number{
+        a{
+            color: #000000;
+            &:hover{
+                color: #88b337;
+            }
+        }
+    }
+    &__email{
+        a{
+            color: #000000;
+            &:hover{
+                color: #88b337;
+            }
+        }
+    }
+    .share-networks{
+        display: flex;
     }
 }
 
@@ -590,12 +620,71 @@ fotorama__stage__frame{
         font-weight: 700;
     }
     &__list{
-        font-size: 1.4rem;
+        a{
+            color: #000000;
+            font-size: 1.4rem;
+            &:hover{
+                color: #88b337;
+            }
+        }
+
     }
 }
 
 .leafs {
     margin-left: auto;
     margin-right: auto;
+}
+
+.slick-dots{
+    li{
+        display: inline-block;
+        background: #88b337;
+        opacity: 0.5;
+        height: 2px !important;
+        width: 27px !important;
+
+        margin: 0 !important;
+        button{
+            visibility: hidden;
+        }
+    }
+    .slick-active{
+        background: #88b337;
+        opacity: 1;
+        height: 4px !important;
+        width: 27px !important;
+    }
+
+    text-align: start !important;
+}
+
+.content{
+    .control{
+        border-bottom: 1px solid;
+        border-color: #88b337;
+        &:before{
+            visibility: hidden;
+        }
+    }
+}
+
+.block.newsletter{
+    .content{
+        .actions{
+            .action:hover{
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+.action.primary:hover{
+    background: transparent;
+    border: 0;
+}
+.field.newsletter{
+    input{
+        text-align: start;
+    }
 }
 
