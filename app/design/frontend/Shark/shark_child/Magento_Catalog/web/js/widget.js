@@ -10,8 +10,13 @@ define([
         },
 
         _init: function () {
-            console.log('WORKINGGG');
+            this.element.on('click', this.onClick);
         },
+
+        onClick: function () {
+            alert('you clicked the button!')
+        }
+
     });
 
         return $.custom.customWidget;
