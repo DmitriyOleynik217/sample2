@@ -4,250 +4,83 @@
 
 & when (@media-common = true) {
     body {
-        .page-wrapper{
-                .breadcrumbs{
-                    text-align: center;
-                    ul{
-                        font-style: normal;
-                        letter-spacing: 0.9px;
-                        line-height: normal;
-                    }
-                    a{
-                        color: #cdcdcd;
-                    }
-                    strong{
-                        color: #000000;
+            .product-info-main{
+                .product-info-stock-sku{
+                    display: flex;
+                    padding: 0;
+                }
+                .stock.available{
+                    order: 2;
+                    padding-left: 20px;
+                }
+                .page-title{
+                    span{
+                        font-size: 24px;
+                        font-family: Verdana, Geneva, sans-serif;
+                        font-weight: 700;
                     }
                 }
-                .columns{
-                    .column.main{
-                        .product-info-main{
-                            .product-add-form{
-                                position: relative;
-                                z-index: 100;
-                                padding-top: 0;
-                                .fieldset{
-                                    display: flex;
-                                    .field.qty{
-                                        span{
-                                            visibility: hidden;
-                                        }
-                                        .control{
-                                            position: relative;
-                                            bottom: 40px;
-                                            margin-right: 10px;
-                                            input#qty.input-text.qty{
-                                                width: 58px;
-                                                height: 62px;
-                                                color: #000000;
-                                                font-family: Verdana;
-                                                text-align: center;
-                                                display: block;
-                                                border: none;
-                                            }
-                                        }
-                                    }
-                                    .actions{
-                                        button{
-                                            width: 131px;
-                                            height: 28px;
-                                            border-radius: 14px;
-                                            background-color: #FFFFFF;
-                                            span{
-                                                display: block;
-                                                position: relative;
-                                                bottom: 8px;
-                                                width: 99px;
-                                                height: 11px;
-                                                color: #ffffff;
-                                                font-family: Verdana, Geneva, sans-serif;
-                                            }
-                                        }
-                                        .action.subscribe.primary{
-                                            background: #FFFFFF;
-                                        }
-                                    }
-                                }
-                            }
-                            .page-title-wrapper.product{
-                                display: flex;
-                                flex-direction: column;
-                                .product-info-stock-sku{
-                                    text-align: left;
-                                    .stock.available{
-                                        position: relative;
-                                        right: 50px;
-                                        width: 65px;
-                                        height: 11px;
-                                        color: #000000;
-                                        font-family: Verdana;
-                                        font-weight: 400;
-                                        text-align: left;
-                                        text-transform: initial;
-                                        background: url("../images/checked.png") no-repeat;
-                                        display: block;
-                                        padding-left: 17px;
-                                        position: relative;
-                                        left: 100px;
-                                        top: 4px;
-                                        display: flex;
-                                        align-items: center;
-                                    }
-                                }
-                                .price-box.price-final_price{
-                                    span.price{
-                                        width: 50px;
-                                        height: 13px;
-                                        color: #000000;
-                                        font-family: Verdana;
-                                        font-size: 18px;
-                                        font-weight: 400;
-                                        font-style: normal;
-                                        letter-spacing: normal;
-                                        line-height: 18px;
-                                        text-align: left;
-                                        text-transform: uppercase;
-                                    }
-                                    margin-bottom: 10px;
-                                }
-                                .share_networks{
-                                    position: relative;
-                                    top: 85px;
-                                    z-index: 101;
-                                }
-                            }
-                            .page-title{
-                                span{
-                                    width: 136px;
-                                    height: 19px;
-                                    color: #000000;
-                                    font-family: Verdana;
-                                    font-size: 24px;
-                                    font-weight: 700;
-                                    font-style: normal;
-                                    letter-spacing: normal;
-                                    line-height: 18px;
-                                    text-align: left;
-                                }
-                            }
-
-                            .product.info.detailed{
-                                .product.data.items{
-                                    .data.item.title.active{
-                                        a{
-                                            color: #000000;
-                                            font-family: Verdana;
-                                            font-size: 16px;
-                                            font-weight: 700;
-                                            text-align: center;
-                                            display: block;
-                                            border: none;
-                                            background: none;
-                                            padding-left: 10px;
-                                            border-bottom: solid;
-                                            border-color: #88b337;
-                                        }
-                                    }
-                                    .data.item.title{
-                                        width: 173px;
-                                        height: 12px;
-                                        opacity: 0.6;
-                                        color: #000000;
-                                        font-family: Verdana;
-                                        font-size: 16px;
-                                        font-weight: 700;
-                                        font-style: normal;
-                                        letter-spacing: normal;
-                                        line-height: normal;
-                                        text-align: left;
-                                        .switch{
-                                            display: block;
-                                            border: none;
-                                            background: none;
-                                            font-weight: 700;
-                                            font-size: 16px;
-                                            text-align: left;
-                                            padding-left: 10px;
-                                        }
-
-
-                                    }
-                                    #tab-label-reviews.data.item.title{
-                                        width: 152px;
-                                        height: 12px;
-                                        opacity: 0.6;
-                                        color: #000000;
-                                        font-family: Verdana;
-                                        font-size: 16px;
-                                        font-weight: 700;
-                                        font-style: normal;
-                                        letter-spacing: normal;
-                                        line-height: normal;
-                                        text-align: left;
-                                    }
-                                    .data.item.content{
-                                        .product.attribute.description{
-                                            .value{
-                                                p{
-                                                    color: #000000;
-                                                    font-family: Verdana;
-                                                    font-size: 14px;
-                                                    font-weight: 400;
-                                                    font-style: normal;
-                                                    letter-spacing: normal;
-                                                    line-height: normal;
-                                                    text-align: left;
-                                                    span{
-                                                        color: #88b337;
-                                                    }
-                                                }
-                                                ul{
-                                                    font-family: Verdana;
-                                                    font-style: normal;
-                                                    letter-spacing: normal;
-                                                    line-height: 21px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .product-social-links{
-                                .product-addto-links{
-                                    a:active{
-                                        color: #4cae4c;
-                                    }
-                                }
-                            }
-                            .product.attribute.sku{
-                                position: relative;
-                                bottom: 24px;
-                            }
-                        }
-                        .block.upsell{
-                            .block-title.title{
-                                height: 795px;
-                                strong#block-upsell-heading{
-                                    display: block;
-                                    width: 450px;
-                                    position: relative;
-                                    left: 500px;
-                                    color: #000000;
-                                    font-family: Verdana;
-                                    font-size: 24px;
-                                    font-weight: 700;
-                                    text-align: left;
-                                    z-index: -1;
-                                    bottom: 160px;
-                                }
-                            }
-                        }
+            }
+        .share-networks{
+            display: flex;
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .product.data.items{
+            .data.item.title{
+                a{
+                    border: none;
+                    background: transparent;
+                }
+            }
+            .data.item.title{
+                &.active{
+                    a{
+                        font-weight: 700;
+                        border-bottom: solid #88b337;
                     }
                 }
             }
         }
+            .fieldset{
+                display: flex;
+                align-items: center;
+                .field.qty{
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    .control{
+                        margin: 0 10px 0px 10px;
+                    }
+                }
+            }
+            .box-tocart{
+                .action.tocart{
+                    width: 100%;
+                    margin-bottom: 0 !important;
+                    border-radius: 45px;
+                    border: none;
+                    background: #88b337;
+                }
+                margin-bottom: 50px;
+            }
+        }
     }
 
+.breadcrumbs{
+    text-align: center;
+    ul{
+        font-style: normal;
+        letter-spacing: 0.9px;
+        line-height: normal;
+    }
+    a{
+        color: #cdcdcd;
+    }
+    strong{
+        color: #000000;
+    }
+}
 
 .product {
     &.info {
@@ -378,11 +211,11 @@ fotorama__stage__frame{
     }
 }
 
-.action.primary {
+/*.action.primary {
     color: #1a1a1a;
     background: #FFFFFF;
     border: none;
-}
+}*/
 
 .block.newsletter{
     h6{
@@ -453,21 +286,7 @@ fotorama__stage__frame{
 }
 
 
-.page-main{
-    .page-title-wrapper{
-        .page-title{
-            span{
-                width: 96px;
-                height: 16px;
-                color: #333333;
-                font-family: Verdana;
-                font-size: 16px;
-                font-weight: 700;
-                text-align: left;
-            }
-        }
-    }
-}
+
 .filter-options{
     color: #333333;
     font-family: Verdana;
@@ -490,16 +309,7 @@ fotorama__stage__frame{
     font-family: Verdana, Geneva, sans-serif;
 }
 
-.title{
-    width: 393px;
-    height: 37px;
-    color: #88b337;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-}
+
 
 .banner {
     padding: 80px;
@@ -561,7 +371,6 @@ fotorama__stage__frame{
         display: block;
         text-align: center;
         width: 75px;
-        border: solid;
         border-radius: 50px;
         background: #88b337;
         border-color: #88b337;
@@ -580,6 +389,7 @@ fotorama__stage__frame{
 .header.content{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .sections{
     margin-bottom: 0px;
@@ -684,10 +494,10 @@ fotorama__stage__frame{
         }
     }
 }
-.action.primary:hover{
+/*.action.primary:hover{
     background: transparent;
     border: 0;
-}
+}*/
 .field.newsletter{
     input{
         text-align: start;

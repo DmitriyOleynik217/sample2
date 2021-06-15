@@ -9,11 +9,6 @@
 
     <body>
         <referenceContainer name="content">
-            <block class="Magento\Cms\Block\Block" name="share_identifier">
-            <arguments>
-                <argument name="block_id" xsi:type="string">share_identifier</argument>
-            </arguments>
-            </block>
             <referenceBlock name="product.attributes" remove="true"/>
             <referenceBlock name="product.info.details">
                 <referenceBlock name="product.info.description">
@@ -30,6 +25,7 @@
             <referenceBlock name="view.addto.compare" remove="true"/>
             <referenceBlock name="view.addto.wishlist" remove="true"/>
             <referenceBlock name="product.info.review" remove="true"/>
+
         </referenceContainer>
         <referenceContainer name="footer">
             <block class="Magento\Cms\Block\Block" name="footerlogo_identifier" before="-">
@@ -45,6 +41,13 @@
                 </arguments>
             </block>
         </referenceContainer>
+        <referenceContainer name="product.info.main">
+            <block class="Magento\Cms\Block\Block" name="social-networks" after="product.info">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">social-networks</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
 
         <move element="product.info.sku" destination="page.main.title" as="product.sku.test" after="page.main.title"/>
         <move element="product.info.stock.sku" destination="page.main.title" as="product.sku.stock.test"/>
@@ -52,5 +55,7 @@
         <move element="share_identifier" destination="page.main.title" as="share_networks_identifier" after="-"/>
         <move element="product.info.details" destination="product.info.main" as="product.info.details.new" after="-"/>
         <move element="navigation.sections" destination="header-wrapper" as="nav.sections.new" after="logo"/>
+        <move element="product.info.sku" destination="product.info.type" after="-"/>
+        <!--<move element="social-networks" destination="product.info" after="-"/>-->
     </body>
 </page>
