@@ -14,7 +14,11 @@ define([
         },
 
         onClick: function () {
-            alert('you clicked the button!')
+            if(null === undefined){
+                alert('You clicked the button!')
+            } else {
+                alert('Null is not the same as undefined!')
+            }
         }
 
     });

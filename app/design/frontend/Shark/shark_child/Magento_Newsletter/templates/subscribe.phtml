@@ -7,7 +7,7 @@
 /** @var \Magento\Newsletter\Block\Subscribe $block */
 ?>
 <div class="block newsletter">
-    <h6><?php echo __('Be first who taste new')?></h6>
+    <h6><?php echo __('Be first who taste new')?></h6><br>
     <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
     <div class="content">
         <form class="form subscribe"
@@ -23,7 +23,7 @@
                             <?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?>
                         </span>
                         <input name="email" type="email" id="newsletter"
-                               placeholder="<?= $block->escapeHtmlAttr(__('Your email')) ?>"
+                               placeholder="<?= $block->escapeHtmlAttr(('Your email')) ?>"
                                data-mage-init='{"mage/trim-input":{}}'
                                data-validate="{required:true, 'validate-email':true}"
                         />
@@ -43,4 +43,4 @@
     </div>
 </div>
 
-<button data-mage-init='{"Magento_Catalog/js/widget": {}}'>Click</button>
+<!--<button data-mage-init='{"Magento_Catalog/js/widget": {}}'>Click</button>-->

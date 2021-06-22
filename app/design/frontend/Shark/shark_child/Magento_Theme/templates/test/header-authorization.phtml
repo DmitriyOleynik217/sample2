@@ -24,9 +24,14 @@ if($customerSession->isLoggedIn()) : ?>
             'jquery',
         ],
         function($) {
-            $( ".header_search_img" ).click(function() {
-                $(".block-search").toggleClass( "active" );
+            $('.header_search_img').on('click',
+                function(event) {
+                    event.stopPropagation();
+                    $('.block-search').toggleClass('active');
+                });
+            $(".page-main").click(function() {
+                console.log('test')
+                $(".block-search").removeClass("active");
             });
-        }
-    );
+        });
 </script>
