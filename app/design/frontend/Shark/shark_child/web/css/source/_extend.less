@@ -131,29 +131,6 @@
         }
 }
 
-.product {
-    &.info {
-        &.detailed{
-            .items {
-
-            }
-        }
-    }
-}
-.product-item-name{
-    a{
-        width: 166px;
-        height: 68px;
-        color: #000000;
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        text-align: center;
-    }
-}
 .nav-sections-item-content{
     ul{
         font-family: Verdana, Geneva, sans-serif;
@@ -184,16 +161,13 @@
     }
 }
 
-.fotorama{
-    width: 505px;
-    height: 800px;
-}
-fotorama__stage__frame{
+
+/*fotorama__stage__frame{
     img{
         width: 500px;
         height: 500px;
     }
-}
+}*/
 .product-addto-links{
     a{
         position: relative;
@@ -220,8 +194,25 @@ fotorama__stage__frame{
     right: 35px;
 }
 .products{
-   /* position: relative;
-    bottom: 70px;*/
+    .product-items{
+        .product-item{
+            a{
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .price-box{
+                .price{
+                    font-size: 14px;
+                }
+            }
+        }
+        .product-item-details{
+            .product-description{
+                line-height: 24px;
+            }
+        }
+    }
 }
 .gallery-placeholder{
     position: relative;
@@ -282,6 +273,14 @@ fotorama__stage__frame{
             box-shadow: none;
         }
     }
+    .actions{
+        .action.subscribe.primary{
+            background: transparent;
+        }
+        .action.subscribe.primary:hover{
+            background: transparent !important;
+        }
+    }
 }
 .page-header{
     .panel.wrapper{
@@ -289,11 +288,7 @@ fotorama__stage__frame{
         height: 0px;
     }
 }
-.leafs{
-    p{
-        margin-left: 600px;
-    }
-}
+
 .page-layout-2columns-left{
     .sidebar-additional{
         visibility: hidden;
@@ -315,7 +310,9 @@ fotorama__stage__frame{
     .price-box{
         margin-top: 0;
         .price{
-                font-weight: 400;
+            font-weight: 400;
+            font-size: 18px !important;
+            line-height: 30px !important;
         }
     }
 }
@@ -582,7 +579,14 @@ fotorama__stage__frame{
 }
 
 .action.primary{
-    background: transparent;
+    background: #88b337;
+    border-radius: 45px;
     border-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.action.primary:hover{
+    background: #88b337 !important;
+    border-style: none !important;
 }
 

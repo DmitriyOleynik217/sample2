@@ -34,13 +34,6 @@
                 </arguments>
             </block>
         </referenceContainer>
-        <referenceContainer name="content.aside">
-            <block class="Magento\Cms\Block\Block" name="leafs_block" after="-">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">leafs_block</argument>
-                </arguments>
-            </block>
-        </referenceContainer>
         <referenceContainer name="product.info.main">
             <block class="Magento\Cms\Block\Block" name="social-networks" after="product.info">
                 <arguments>
@@ -56,6 +49,5 @@
         <move element="product.info.details" destination="product.info.main" as="product.info.details.new" after="-"/>
         <move element="navigation.sections" destination="header-wrapper" as="nav.sections.new" after="logo"/>
         <move element="product.info.sku" destination="product.info.type" after="-"/>
-        <!--<move element="social-networks" destination="product.info" after="-"/>-->
     </body>
 </page>
