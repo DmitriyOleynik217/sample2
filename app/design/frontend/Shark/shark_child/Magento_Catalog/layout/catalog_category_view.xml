@@ -9,5 +9,6 @@
     <body>
         <referenceBlock name="product_list_toolbar" remove="true"/>
         <referenceBlock name="page.main.title" remove="true"/>
+        <referenceBlock name="category.product.addto" remove="true"/>
     </body>
 </page>
