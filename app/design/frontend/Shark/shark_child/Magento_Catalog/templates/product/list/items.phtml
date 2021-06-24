@@ -324,7 +324,7 @@ $_item = null;
             require(['jquery', 'jquery/ui', 'slick'], function($) {
                 $(document).ready(function() {
                     $(".products-<?= $block->escapeHtmlAttr($type) ?> .product-items").slick({
-                        dots: true,
+                        dots: false,
                         infinite: true,
                         slidesToShow: 4
 

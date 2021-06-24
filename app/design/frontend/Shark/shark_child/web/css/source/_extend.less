@@ -35,6 +35,24 @@
                         margin-right: 6px;
                     }
                 }
+                .fieldset{
+                    display: flex;
+                    align-items: center;
+                    .field.qty{
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        .label{
+                            margin: 0;
+                        }
+                        .control{
+                            margin: 0 10px 0 10px;
+                            input{
+                                border-style: none;
+                            }
+                        }
+                    }
+                }
             }
         .block.upsell{
             display: inline-block;
@@ -81,24 +99,7 @@
                 }
             }
         }
-            .fieldset{
-                display: flex;
-                align-items: center;
-                .field.qty{
-                    display: flex;
-                    align-items: center;
-                    margin: 0;
-                    .label{
-                        margin: 0;
-                    }
-                    .control{
-                        margin: 0 10px 0 10px;
-                        input{
-                            border-style: none;
-                            }
-                    }
-                }
-            }
+
             .box-tocart{
                 .action.tocart{
                     width: 100%;
@@ -455,6 +456,34 @@
 
 }
 
+.block-content{
+    .products{
+        .slick-next.slick-arrow::before {
+            content: url("../images/down-arrow.png");
+        }
+        .slick-prev.slick-arrow::before{
+            content: url("../images/down-arrow2.png");
+
+        }
+        .slick-next{
+            box-shadow: none;
+            border-style: none;
+        }
+        .slick-next:hover{
+            border-style: none;
+            box-shadow: none;
+        }
+        .slick-prev{
+            box-shadow: none;
+            border-style: none;
+        }
+        .slick-prev:hover{
+            border-style: none;
+            box-shadow: none;
+        }
+    }
+}
+
 .order__link{
     a{
         display: block;
@@ -633,5 +662,15 @@
 .action.primary:hover{
     background: #88b337 !important;
     border-style: none !important;
+}
+
+.opc-wrapper{
+    .step-content{
+        .input-field{
+            input{
+                width: 25%;
+            }
+        }
+    }
 }
 
