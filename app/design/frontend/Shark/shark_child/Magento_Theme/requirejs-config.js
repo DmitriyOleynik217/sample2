@@ -11,6 +11,8 @@ var config = {
         }
     },
     deps: [
-        "js/main"
+        "js/main",
+        "js/testing-js-ways",
+        "Magento_Theme/js/include-js"
     ]
 };

@@ -35,3 +35,15 @@ if($customerSession->isLoggedIn()) : ?>
             });
         });
 </script>
+<script type="text/javascript">
+    console.log('the first way');
+</script>
+<script type="text/javascript">
+    require( [
+            'jquery'
+        ],
+        function($) {
+            console.log('Imperative way');
+        });
+</script>
+

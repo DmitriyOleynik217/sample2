@@ -5,7 +5,8 @@
  * See COPYING.txt for license details.
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 
     <body>
         <referenceContainer name="footer">
@@ -29,7 +30,8 @@
         </referenceContainer>
 
         <referenceContainer name="header-wrapper">
-            <block class="Magento\Framework\View\Element\Template" name="sign-in" template="Magento_Theme::test/header-authorization.phtml" after="top.search"/>
+            <block class="Magento\Framework\View\Element\Template" name="sign-in"
+                   template="Magento_Theme::test/header-authorization.phtml" after="top.search"/>
         </referenceContainer>
         <referenceContainer name="page.wrapper">
             <block class="Magento\Cms\Block\Block" name="leafs_block" before="footer">
