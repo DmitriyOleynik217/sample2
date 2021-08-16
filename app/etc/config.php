@@ -262,6 +262,8 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Shark_ModuleCheckout' => 1,
+        'Shark_ViewModel' => 1,
+        'Shark_WidgetModule' => 1,
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidation' => 1,

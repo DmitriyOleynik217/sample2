@@ -1,0 +1,39 @@
+<style>
+    .word-list {
+    li {
+        font-size: 10px;
+    }
+    }
+</style>
+<div><button id="up">Click to increase the font size</button></div>
+
+<ul class="word-list" id="my-list">
+    <li>One
+        <ul>
+            <li>Two
+                <ul>
+                    <li>Three
+                        <ul>
+                            <li>Four
+                                <ul>
+                                    <li>Five
+                                        <ul>
+                                            <li>Six</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    let html = document.getElementById('my-list');
+    up.onclick = function() {
+        html.style.fontSize = parseInt(getComputedStyle(html, '').fontSize) + 2 + 'px';
+    };
+</script>

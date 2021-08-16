@@ -43,6 +43,6 @@
         <move element="top.search" destination="header.container" as="topSearch.new" after="-"/>
         <move element="navigation.sections" destination="header-wrapper" as="nav.sections.new" after="logo"/>
         <referenceContainer name="header.panel" remove="true"/>
-        <move element="minicart" destination="header-wrapper" as="minicart.test" after="sign-in"/>
+        <move element="minicart" destination="header-wrapper" as="minicart.tesr" after="sign-in"/>
     </body>
 </page>

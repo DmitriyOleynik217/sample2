@@ -14,6 +14,9 @@
                     <argument name="block_id" xsi:type="string">home-banner</argument>
                 </arguments>
             </block>
+            <!-- the moving square -->
+            <!--<block class="Magento\Framework\View\Element\Template" name="homepage-test"
+                   template="Magento_Cms::homepage-test.phtml" after="home-banner"/>-->
             <!--<block class="Magento\Catalog\Block\Product\ListProduct" name="category.products.list" as="product_list" template="Magento_Catalog::product/list.phtml">
                     <container name="category.product.list.additional" as="additional" />
                     <block class="Magento\Framework\View\Element\RendererList" name="category.product.type.details.renderers" as="details.renderers">
@@ -31,6 +34,8 @@
                     <argument name="name" xsi:type="string">product_list_toolbar</argument>
                 </action>
             </block>-->
+            <!--<block class="Magento\Framework\View\Element\Template" name="change-text-size"
+                   template="Magento_Cms::text-changing.phtml" after="-"/>-->
         </referenceContainer>
 
     </body>

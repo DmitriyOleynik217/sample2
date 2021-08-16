@@ -27,18 +27,84 @@
                                 </item>
                                 <item name="steps" xsi:type="array">
                                     <item name="children" xsi:type="array">
+                                        <item name="billing-step" xsi:type="array">
+                                            <item name="component" xsi:type="string">uiComponent</item>
+                                            <item name="children" xsi:type="array">
+                                                <item name="payment" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="renders" xsi:type="array">
+                                                            <!-- merge payment method renders here -->
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="custompayment" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Shark_ModuleCheckout/js/view/payment/method-renderer</item>
+                                                                    <item name="methods" xsi:type="array">
+                                                                        <item name="custompayment" xsi:type="array">
+                                                                            <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
+                                                                        </item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
                                         <!-- The new step you add -->
                                         <item name="check-login-step" xsi:type="array">
                                             <item name="component" xsi:type="string">Shark_ModuleCheckout/js/view/checkout-login-step</item>
                                             <item name="sortOrder" xsi:type="string">2</item>
                                             <item name="children" xsi:type="array">
                                                 <!--add here child component declaration for your step-->
+                                                <item name="shippingAddress" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="before-form" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="custom-checkout-form-container" xsi:type="array">
+                                                                    <!-- Add this item to configure your js file  -->
+                                                                    <item name="component" xsi:type="string">Shark_ModuleCheckout/js/view/custom-checkout-form</item>
+                                                                    <item name="config" xsi:type="array">
+                                                                        <!-- And this to add your html template  -->
+                                                                        <item name="template" xsi:type="string">Shark_ModuleCheckout/custom-checkout-form</item>
+                                                                    </item>
+                                                                    <item name="children" xsi:type="array">
+                                                                        <!-- Here we will add the form fields  -->
+                                                                        <item name="custom-checkout-form-fieldset" xsi:type="array">
+                                                                            <!-- uiComponent is used as a wrapper for form fields (its template will render all children as a list) -->
+                                                                            <item name="component" xsi:type="string">uiComponent</item>
+                                                                            <!-- the following display area is used in template (see below) -->
+                                                                            <item name="displayArea" xsi:type="string">custom-checkout-form-fields</item>
+                                                                            <item name="children" xsi:type="array">
+                                                                                <item name="text_field" xsi:type="array">
+                                                                                    <item name="component" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
+                                                                                    <item name="config" xsi:type="array">
+                                                                                        <!-- customScope is used to group elements within a single form (e.g. they can be validated separately) -->
+                                                                                        <item name="customScope" xsi:type="string">customCheckoutForm</item>
+                                                                                        <item name="template" xsi:type="string">ui/form/field</item>
+                                                                                        <item name="elementTmpl" xsi:type="string">ui/form/element/input</item>
+                                                                                    </item>
+                                                                                    <item name="provider" xsi:type="string">checkoutProvider</item>
+                                                                                    <item name="dataScope" xsi:type="string">customCheckoutForm.text_field</item>
+                                                                                    <item name="label" xsi:type="string" translate="true">Text Field</item>
+                                                                                    <item name="sortOrder" xsi:type="string">1</item>
+                                                                                    <item name="validation" xsi:type="array">
+                                                                                        <item name="required-entry" xsi:type="string">true</item>
+                                                                                    </item>
+                                                                                </item>
+                                                                            </item>
+                                                                        </item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
                                             </item>
                                         </item>
                                         <item name="shipping-step" xsi:type="array">
                                             <item name="children" xsi:type="array">
                                                 <item name="shippingAddress" xsi:type="array">
-                                                    <item name="children" xsi:type="array"><item name="shipping-address-fieldset" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="shipping-address-fieldset" xsi:type="array">
                                                             <item name="children" xsi:type="array">
                                                                 <item name="company" xsi:type="array">
                                                                     <item name="validation" xsi:type="array">
@@ -49,9 +115,9 @@
                                                                         <item name="company-validation" xsi:type="boolean">true</item>
                                                                     </item>
                                                                 </item>
-                                                                <item name="postcode" xsi:type="array">
-                                                                    <item name="config" xsi:type="array">
-                                                                        <item name="componentDisabled" xsi:type="boolean">true</item>
+                                                                <item name="telephone" xsi:type="array">
+                                                                    <item name="validation" xsi:type="array">
+                                                                        <item name="validate-phone-number" xsi:type="boolean">true</item>
                                                                     </item>
                                                                 </item>
                                                             </item>
@@ -70,6 +136,3 @@
         </referenceBlock>
     </body>
 </page>
-
-
-
